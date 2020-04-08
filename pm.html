@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <title>My Postman</title>
+        <link rel="stylesheet" href="post.css">
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <div class="heading">
+                    Postman
+                </div>
+                <div class="fix">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+                </div>
+                <div>
+                    <img src="C:\Users\dell\Desktop\web\postman\dfg.png" class="image">
+                </div>
+            </div>
+        </header>
+            
+           
+              <div class="container">
+                  <h1>Welcome To Postman</h1>
+                <table align="center" id="mytab">
+                    <tr>
+                        <td>URL:</td>
+                        <td><input type="text" id="url" placeholder="Enter URL here"></td>
+                    </tr>
+                    <tr>
+                        <td>Request Type:</td>
+                        <td><input type="radio" id="typing" name="requestT" value="get" checked>Get</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="requestT" id="typing" value="post">Post</td>
+                    </tr>
+                    <tr>
+                        <td>Content Type:</td>
+                        <td><input type="radio" id="jsonid" name="contentT" value="json" checked>JSON</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" id="custom" name="contentT" value="custom">Custom Parameter</td>
+                    </tr>
+                    
+                    <tr id="parameter">
+
+                        <td id="hidden">Parameter 1:</td>
+                        <td><input type="text" id="param1" placeholder="Enter Parameter 1 key"></td>
+                        <td><input type="text" id="para1" placeholder="Enter Parameter 1 value"></td>
+                        <td><button class="btn" id="mybtn" onclick="addparam();">+</button></td>
+                    </td>
+                    </tr>
+                        
+                    <tr id="req">
+                        <td><label id="jso">Enter Request Json:</label></td>
+                        <td><textarea id="area" class="jsontext"></textarea></td>
+                    </tr>
+                    <tr class="my-3">
+                        <td><button id="submit" class="btn">Submit</button></td>
+                    </tr>
+                    <tr class="my-8">
+                        <td>Responsive:</td>
+                        <td><textarea id="response">Your Responsive will appear here</textarea></td>
+                    </tr>
+            
+                </table>
+                
+            </div>
+        </div>
+    <script src="postman.js"></script>    
+    </body>
+</html>
