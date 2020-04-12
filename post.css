@@ -84,7 +84,10 @@ table #para1,.btn{
 }
 @media only screen and(max-width:670px){
     header{
-        width:13885px;
+        width:100%;
+    }
+    .container{
+        width: 100%;
     }
 }
 @media only screen and(max-width:1000px){
